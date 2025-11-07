@@ -6,9 +6,10 @@ from Utils.topology import create_network_topology
 
 def main():
     ip, subnetmask = get_local_ip_and_subnet()
-    print(f"IP locale ottenuto: {ip}, Subnet Mask: {subnetmask}")
+    print(f"IP: {ip}, Subnet Mask: {subnetmask}")
 
     create_network_topology(ip, subnetmask)
 
 if __name__ == "__main__":
+
     main()
